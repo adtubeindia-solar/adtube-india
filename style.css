@@ -1,0 +1,375 @@
+/* =====================================
+   ADTUBE INDIA WEBSITE
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#041B3D;
+    z-index:1000;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00BFFF;
+}
+
+.btn{
+    background:#00BFFF;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#0099dd;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:100vh;
+    background:url("../images/hero.jpg") center center/cover no-repeat;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,20,60,.75);
+}
+
+.hero-content{
+    position:relative;
+    color:#fff;
+    max-width:850px;
+    z-index:2;
+}
+
+.hero h4{
+    color:#00BFFF;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.hero h1{
+    font-size:58px;
+    line-height:1.2;
+}
+
+.hero p{
+    margin:25px 0;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    margin-top:40px;
+}
+
+.primary-btn,
+.secondary-btn{
+    display:inline-block;
+    padding:15px 35px;
+    margin:10px;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.primary-btn{
+    background:#00BFFF;
+    color:#fff;
+}
+
+.primary-btn:hover{
+    transform:translateY(-4px);
+}
+
+.secondary-btn{
+    border:2px solid #fff;
+    color:#fff;
+}
+
+.secondary-btn:hover{
+    background:#fff;
+    color:#041B3D;
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:90px 0;
+}
+
+section h2{
+    text-align:center;
+    color:#041B3D;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.section-text{
+    text-align:center;
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* ================= ABOUT ================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:50px;
+    color:#00BFFF;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ================= SERVICES ================= */
+
+#services{
+    background:#eef5fb;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.service-box{
+    background:#fff;
+    border-radius:15px;
+    text-align:center;
+    padding:40px;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.service-box:hover{
+    background:#041B3D;
+    color:#fff;
+}
+
+.service-box i{
+    font-size:45px;
+    color:#00BFFF;
+    margin-bottom:20px;
+}
+
+/* ================= PRODUCTS ================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-card h3{
+    padding:20px;
+    text-align:center;
+}
+
+/* ================= CONTACT ================= */
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+textarea{
+    height:180px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    background:#00BFFF;
+    color:#fff;
+    border:none;
+    padding:16px;
+    font-size:18px;
+    border-radius:40px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#0099dd;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#041B3D;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    margin-bottom:20px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+nav{
+display:none;
+}
+
+.btn{
+display:none;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:30px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+section h2{
+font-size:30px;
+}
+
+.primary-btn,
+.secondary-btn{
+display:block;
+margin:15px auto;
+width:220px;
+}
+
+}
+
+nav ul li a.active{
+    color:#00BFFF;
+    font-weight:600;
+}
